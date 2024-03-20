@@ -18,7 +18,7 @@ def app():
         st.session_state["X_test"] = []
     
     if "y_train" not in st.session_state: 
-        st.session_state["X_train"] = []
+        st.session_state["y_train"] = []
     
     if "y_test" not in st.session_state: 
         st.session_state["y_yest"] = []
