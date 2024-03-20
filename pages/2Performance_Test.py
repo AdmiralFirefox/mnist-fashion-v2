@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import 
+from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier
 
 # Define the Streamlit app
 def app():
