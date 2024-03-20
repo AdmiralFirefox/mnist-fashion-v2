@@ -60,9 +60,9 @@ def app():
     st.subheader('First 25 images in the MNIST dataset') 
 
     # Get the first 25 images and reshape them to 28x28 pixels
-    train_images = np.array(X_train)
+    train_images = np.array(X_train).reshape(-1, 28, 28)
     train_labels = np.array(y_train)
-    images = train_images[:25].reshape(-1, 28, 28)
+    images = train_images[:25]
     # Create a 5x5 grid of subplots
     fig, axes = plt.subplots(5, 5, figsize=(10, 10))
     # Plot each image on a separate subplot
